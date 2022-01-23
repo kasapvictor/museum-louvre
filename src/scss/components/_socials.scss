@@ -1,0 +1,49 @@
+.social__link {
+  display: block;
+  width: 4.8rem;
+  height: 4.8rem;
+  position: relative;
+  font-size: 0;
+  border: .1rem solid var(--color-border-white);
+  border-radius: 50%;
+  opacity: .8;
+  @extend %transition-2;
+
+  &:hover {
+    opacity: 1;
+    filter: invert(60%) sepia(17%) saturate(667%) hue-rotate(356deg) brightness(87%) contrast(86%);
+  }
+}
+
+.social__ico {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -10;
+}
+
+.social__ico--you {
+  background-image: url("../svg/you.svg");
+}
+
+.social__ico--ins {
+  background-image: url("../svg/inst.svg");
+}
+
+.social__ico--fb {
+  background-image: url("../svg/fb.svg");
+}
+
+.social__ico--tw {
+  background-image: url("../svg/tw.svg");
+}
+
+.social__ico--pin {
+  background-image: url("../svg/pint.svg");
+}

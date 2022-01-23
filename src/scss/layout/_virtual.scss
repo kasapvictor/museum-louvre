@@ -1,0 +1,31 @@
+.virtual {
+  padding-bottom: 0;
+}
+
+.virtual__item {
+  padding-bottom: 7.7rem;
+}
+
+.virtual__item-title {
+  padding-top: 3rem;
+  color: var(--color-bg-dark);
+  &:after {
+    height: .2rem;
+    background-color: var(--color-bg-error);
+  }
+}
+
+.virtual__item {
+   &:hover {
+     .virtual__item-title {
+       &:after {
+         width: 100%;
+       }
+     }
+   }
+}
+
+.virtual__item-tag {
+  display: inline-block;
+  padding-bottom: .5rem;
+}

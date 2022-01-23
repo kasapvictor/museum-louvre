@@ -1,0 +1,15 @@
+.link {
+  &--white {
+    color: var(--color-link-white);
+    @extend %transition-2;
+  }
+
+  &--active {
+    color: var(--color-link-hover);
+  }
+
+  &:hover {
+    color: var(--color-link-hover);
+  }
+}
+

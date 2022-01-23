@@ -1,0 +1,144 @@
+.buy {
+  padding-top: 7.5rem;
+}
+
+.buy__form-title {
+  padding-bottom: 1rem;
+  @include font (
+          $size: 2.8rem,
+          $family: var(--font-family-main),
+          $height: 1.1,
+          $space: .1rem,
+          $weight: 500
+  );
+}
+
+.buy__form-title,
+.buy__form-fieldname {
+  color: var(--color-white);
+}
+
+.buy__right {
+
+}
+
+.buy__form {
+  padding-top: .5rem;
+}
+
+.buy__form-label {
+  display: flex;
+  align-items: center;
+  padding: 4.5rem 2rem 0 4rem;
+  cursor: pointer;
+}
+
+.buy__form-input-radio {
+  width: 0;
+  height: 0;
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: -1rem;
+    left: -3rem;
+    border: .2rem solid var(--color-border-white);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &:after {
+    content: '';
+    width: .7rem;
+    height: .7rem;
+    position: absolute;
+    top: -.4rem;
+    left: -2.4rem;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &:checked:after {
+    background-color: var(--color-bg-white);
+  }
+}
+
+.buy__form-label--vertical {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.buy__form-label--count {
+  width: 150px;
+  align-items: flex-start;
+  margin-left: auto;
+  padding: 0 0 3.5rem;
+  cursor: default;
+}
+
+.buy__form-input-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+  border: .2rem solid var(--color-border-white);
+}
+
+.buy__form-input-minus,
+.buy__form-input-plus {
+  cursor: pointer;
+  opacity: .8;
+  @extend %transition-2;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.buy__form-input-plus {
+  opacity: .7;
+}
+
+.buy__form-input-item {
+  width: 33%;
+  font-family: 'Roboto';
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.buy__form-input {
+  display: none;
+}
+
+.buy_form-footer {
+  text-align: right;
+}
+
+.buy__form-total * {
+  font-size: 2.8rem;
+  color: var(--color-text-white);
+}
+
+.buy__form-total {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  text-align: right;
+}
+
+.buy_form-footer-submit {
+  padding: 1.1rem 3.7rem;
+  background-color: var(--color-bg-white);
+  font-size: 2.2rem;
+  color: var(--color-border-dark);
+  border-radius: .2rem;
+  @extend %transition-2;
+
+  &:hover {
+    background-color: var(--color-bg-second);
+    color: var(--color-text-white);
+  }
+}

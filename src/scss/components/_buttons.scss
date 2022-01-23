@@ -1,0 +1,18 @@
+.button {
+  display: inline-block;
+  padding: 2rem 7rem;
+  background: var(--color-ligh);
+  border-radius: 1rem;
+  font-size: var(--font-size-default);
+  font-weight: 200;
+  letter-spacing: .2rem;
+  @extend %transition-2;
+}
+
+.button--error {
+  background: var(--color-bg-error);
+  color: var(--color-text-white);
+  &:hover {
+    background: var(--color-bg-second);
+  }
+}
